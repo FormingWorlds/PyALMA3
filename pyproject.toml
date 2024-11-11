@@ -29,7 +29,10 @@ dependencies = [
     "joblib",
     "numpy",
     "mpmath",
-    "psutil"
+    "psutil",
+    "ipykernel",
+    "matplotlib", 
+    "toml"
 ]
 
 [tool.setuptools]
