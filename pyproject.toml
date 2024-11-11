@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+[project]
+name = "alma"
+version = "1.0.1"
+description = "Calculation of tidal Love numbers given an appropriate model of interior structure for a planetary body. "
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name="Flavio Petricca", email="flavio.petricca@uniroma1.it"},
+    {name="Saikiran Tharimena"},
+    {name="Daniele Melini"},
+    {name="Giorgio Spada"},
+    {name="Amirhossein Bagheri"},
+    {name="Marshall J. Styczinski"},
+    {name="Steven D. Vance"},
+]
+keywords = [
+    "Astronomy",
+    "Exoplanets",
+    "Moons"
+]
+license = {text = "GPL v3.0"}
+classifiers = []
+dependencies = [
+    "joblib",
+    "numpy",
+    "mpmath",
+    "psutil"
+]
+
+[tool.setuptools]
+py-modules = ['alma']
